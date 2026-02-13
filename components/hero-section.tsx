@@ -1,15 +1,16 @@
-"use client"
+ "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import { Github, Linkedin, Instagram, Mail } from "lucide-react"
+import { Github, Linkedin, Instagram, Youtube, MessageCircle } from "lucide-react"
 import { useRef } from "react"
 import { MagneticButton } from "./magnetic-button"
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, href: "https://github.com/Naseeb09", color: "hover:text-white" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/khan-jariff/", color: "hover:text-blue-500" },
-  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/khan_jariff/", color: "hover:text-pink-500" },
-  { name: "Email", icon: Mail, href: "mailto:khanjariff09@gmail.com", color: "hover:text-cyan-400" }
+  { name: "GitHub", icon: Github, href: "https://github.com/Naseeb09" },
+  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/@reno_verse" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/khan-jariff/" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/khan_jariff/" },
+  { name: "Discord", icon: MessageCircle, href: "https://www.discord.com/users/1142144135298568203" },
 ]
 
 export function HeroSection() {
@@ -34,8 +35,7 @@ export function HeroSection() {
     <section
       ref={containerRef}
       id="home"
-      /* Reduced pt-32 to pt-20 to bring the content back up slightly */
-      className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20 sm:pt-24 pb-20 sm:pb-40 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 pt-32 md:pt-40 pb-20 sm:pb-40 overflow-hidden"
     >
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-black">
@@ -55,7 +55,7 @@ export function HeroSection() {
       />
 
       {/* Content */}
-      <motion.div style={{ y, opacity }} className="relative z-10 max-w-5xl mx-auto text-center">
+      <motion.div style={{ y, opacity }} className="relative z-10 max-w-5xl mx-auto text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,12 +69,11 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          /* Reduced mt-12 to mt-4 to pull the name closer to the navigation */
-          className="mb-10 mt-4"
+          className="mb-10 mt-4 px-4"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white leading-[0.95] px-2 sm:px-4 py-2">
+          <h1 className="text-[2.6rem] leading-[1.1] sm:text-5xl md:text-7xl font-black tracking-tighter text-white break-words px-2 sm:px-4 py-2">
             <span className="block">KHAN JARIFF</span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-500 animate-gradient">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-500 animate-gradient break-words">
               AL NASEEB
             </span>
           </h1>
@@ -140,7 +139,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: 1.1 + index * 0.1 }}
-                className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg glass glass-border flex items-center justify-center text-zinc-400 hover:border-cyan-400/50 transition-all ${social.color}`}
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg glass glass-border flex items-center justify-center text-zinc-400 hover:text-cyan-400 hover:border-cyan-400/50 transition-all"
                 data-cursor-text={social.name}
                 aria-label={social.name}
               >

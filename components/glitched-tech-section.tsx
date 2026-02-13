@@ -23,7 +23,7 @@ export function GlitchedTechSection() {
   ]
 
   return (
-    <section id="glitched-tech" className="px-6 py-40 max-w-7xl mx-auto">
+    <section id="glitched-tech" className="px-6 py-20 md:py-40 max-w-7xl mx-auto">
       {/* Main Brand Section */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -33,16 +33,16 @@ export function GlitchedTechSection() {
         className="mb-24"
       >
         <div className="flex flex-col items-start gap-8">
-          <div className="flex items-start gap-6">
+          <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-400 to-cyan-600 p-[1px] flex-shrink-0 mt-2">
               <div className="w-full h-full rounded-2xl bg-black flex items-center justify-center">
                 <Zap className="w-8 h-8 text-cyan-400" />
               </div>
             </div>
             <div>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight break-words">
                 <span className="text-white">GLITCHED</span>
-                <span className="text-cyan-400 ml-3">TECHNOLOGIES</span>
+                <span className="text-cyan-400 block md:inline md:ml-3">TECHNOLOGIES</span>
               </h2>
               <p className="text-sm text-zinc-500 font-mono mt-2">Founded by Khan Jariff Al Naseeb</p>
             </div>

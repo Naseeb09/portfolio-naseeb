@@ -20,7 +20,7 @@ const highlights = [
 
 export function ExecutiveBento() {
   return (
-    <section id="about" className="px-6 py-40 max-w-7xl mx-auto">
+    <section id="about" className="px-6 py-20 md:py-40 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

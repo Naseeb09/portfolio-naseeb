@@ -32,7 +32,7 @@ export function SideQuestGrid() {
   const [isHovering, setIsHovering] = useState(false)
 
   return (
-    <section className="px-6 py-40 max-w-7xl mx-auto">
+    <section className="px-6 py-20 md:py-40 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

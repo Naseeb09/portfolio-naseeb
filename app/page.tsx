@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import { ExecutiveBento } from "@/components/executive-bento"
 import { ProjectsSection } from "@/components/projects-section"
@@ -17,7 +16,6 @@ export default function Home() {
       <CustomCursor />
       <ScrollProgress />
       <FloatingParticles />
-      <Navbar />
       <div className="relative z-10">
         <HeroSection />
         <ExecutiveBento />

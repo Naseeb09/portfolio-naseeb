@@ -1,16 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowUp, Heart, Zap, Github, Linkedin, Mail, Twitter, Instagram, MessageCircle, BookOpen, Youtube, ExternalLink } from "lucide-react"
+import { ArrowUp, Heart, Zap, Github, Linkedin, Mail, Instagram, Youtube, MessageCircle, ExternalLink } from "lucide-react"
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, href: "https://github.com/Naseeb09", color: "hover:text-white" },
-  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/@reno_verse", color: "hover:text-red-500" },
-  { name: "Twitter", icon: Twitter, href: "https://twitter.com", color: "hover:text-blue-400" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/khan-jariff/", color: "hover:text-blue-500" },
-  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/khan_jariff/", color: "hover:text-blue-500" },
-  { name: "Discord", icon: MessageCircle, href: "https://www.discord.com/users/1142144135298568203", color: "hover:text-blue-500" },
-  { name: "Medium", icon: BookOpen, href: "https://medium.com/@khanjariff", color: "hover:text-blue-500" }
+  { name: "GitHub", icon: Github, href: "https://github.com/Naseeb09" },
+  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/@reno_verse" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/khan-jariff/" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/khan_jariff/" },
+  { name: "Discord", icon: MessageCircle, href: "https://www.discord.com/users/1142144135298568203" },
 ]
 
 export function Footer() {
@@ -144,7 +142,7 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
             whileHover={{ scale: 1.15, y: -2 }}
-            className={`w-12 h-12 rounded-lg glass glass-border flex items-center justify-center text-zinc-400 hover:border-cyan-400/50 transition-all ${social.color}`}
+            className="w-12 h-12 rounded-lg glass glass-border flex items-center justify-center text-zinc-400 hover:text-cyan-400 hover:border-cyan-400/50 transition-all"
             title={social.name}
           >
             <social.icon className="w-5 h-5" />

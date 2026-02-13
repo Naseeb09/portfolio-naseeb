@@ -1,11 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Geist_Mono } from "next/font/google"
+import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { Navbar } from "@/components/navbar"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
-const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
 
 export const metadata: Metadata = {
   title: "Khan Jariff Al Naseeb | Elite Solo Engineer & Founder",
@@ -77,12 +77,6 @@ export const metadata: Metadata = {
       {
         url: "/icon-light-32x32.png",
         type: "image/png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        type: "image/png",
-        media: "(prefers-color-scheme: dark)",
       },
     ],
     apple: [
@@ -115,7 +109,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
-      <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased bg-black`}>
+      <body className={`${inter.variable} font-sans antialiased bg-black`}>
+        <Navbar />
         {children}
         <Analytics />
       </body>

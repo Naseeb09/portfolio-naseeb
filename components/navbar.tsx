@@ -57,7 +57,9 @@ export function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "py-3" : "py-6"}`}
+        className={`fixed top-0 left-0 right-0 z-[100] backdrop-blur-md transition-all duration-500 ${
+          isScrolled ? "py-3" : "py-6"
+        }`}
       >
         <div className="max-w-7xl mx-auto px-6">
           <div
@@ -153,7 +155,7 @@ export function Navbar() {
           pointerEvents: isMobileOpen ? "auto" : "none",
         }}
         transition={{ duration: 0.2 }}
-        className="fixed inset-0 z-40 md:hidden"
+        className="fixed inset-0 z-20 md:hidden"
       >
         <div className="absolute inset-0 bg-black/95 backdrop-blur-xl" onClick={() => setIsMobileOpen(false)} />
         <motion.div

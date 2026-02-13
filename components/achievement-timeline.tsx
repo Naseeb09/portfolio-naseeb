@@ -62,7 +62,7 @@ const typeStyles = {
 
 export function AchievementTimeline() {
   return (
-    <section id="timeline" className="px-6 py-40 max-w-6xl mx-auto">
+    <section id="timeline" className="px-6 py-20 md:py-40 max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

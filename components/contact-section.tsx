@@ -1,21 +1,19 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Twitter, Youtube, MessageCircle, Instagram, BookOpen } from "lucide-react"
+import { ArrowUpRight, Github, Linkedin, Mail, MapPin, Youtube, Instagram, MessageCircle } from "lucide-react"
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, href: "https://github.com/Naseeb09", color: "hover:text-white" },
-  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/@reno_verse", color: "hover:text-red-500" },
-  { name: "Twitter", icon: Twitter, href: "https://twitter.com", color: "hover:text-blue-400" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/khan-jariff/", color: "hover:text-blue-500" },
-  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/khan_jariff/", color: "hover:text-blue-500" },
-  { name: "Discord", icon: MessageCircle, href: "https://www.discord.com/users/1142144135298568203", color: "hover:text-blue-500" },
-  { name: "Medium", icon: BookOpen, href: "https://medium.com/@khanjariff", color: "hover:text-blue-500" }
+  { name: "GitHub", icon: Github, href: "https://github.com/Naseeb09" },
+  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/@reno_verse" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/khan-jariff/" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/khan_jariff/" },
+  { name: "Discord", icon: MessageCircle, href: "https://www.discord.com/users/1142144135298568203" },
 ]
 
 export function ContactSection() {
   return (
-    <section id="contact" className="px-6 py-40 max-w-7xl mx-auto">
+    <section id="contact" className="px-6 py-20 md:py-40 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -94,7 +92,7 @@ export function ContactSection() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: index * 0.1 }}
                       whileHover={{ y: -2, scale: 1.02 }}
-                      className={`flex items-center gap-3 p-4 rounded-2xl bg-zinc-800/30 border border-zinc-700/30 hover:border-zinc-600 transition-all group ${social.color}`}
+                      className="flex items-center gap-3 p-4 rounded-2xl bg-zinc-800/30 border border-zinc-700/30 hover:border-zinc-600 transition-all group"
                     >
                       <social.icon className="w-4 h-4 text-zinc-400 group-hover:text-current transition-colors" />
                       <span className="text-sm font-medium text-zinc-300 group-hover:text-white transition-colors">

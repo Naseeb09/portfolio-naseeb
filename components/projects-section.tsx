@@ -103,7 +103,7 @@ export function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<(typeof featuredProjects)[0] | null>(null)
 
   return (
-    <section id="projects" className="px-6 py-40 max-w-7xl mx-auto">
+    <section id="projects" className="px-6 py-20 md:py-40 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
