@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://khanjariff.com"),
+  metadataBase: new URL("https://khan-jariff.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Khan Jariff Al Naseeb | Elite Solo Engineer & Founder",
     description: "Founder & Lead Engineer @ Glitched Technologies. Building systems that evolve. Engineering the future through elegant code.",
-    url: "https://khanjariff.com",
+    url: "https://khan-jariff.vercel.app",
     siteName: "Khan Jariff Al Naseeb",
     locale: "en_US",
     type: "website",
@@ -88,9 +88,7 @@ export const metadata: Metadata = {
     ],
   },
   verification: {
-    // Add your verification codes here when available
-    // google: "your-google-verification-code",
-    // yandex: "your-yandex-verification-code",
+    google: "e1fdmcwm53BwHKe6WUM-DOk7dbAaUGtGZKKimBflZhU",
   },
 }
 
@@ -102,7 +100,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="canonical" href="https://khanjariff.com" />
+        <link rel="canonical" href="https://khan-jariff.vercel.app" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#000000" />
         <meta name="mobile-web-app-capable" content="yes" />
