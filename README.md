@@ -51,7 +51,7 @@ Built for performance, scalability, and an elite aesthetic inspired by high-tech
 
 
 <div align="center">
-**If you vibe with this engineering aesthetic or found the architecture useful, consider supporting the evolution.**
+If you vibe with this engineering aesthetic or found the architecture useful, consider supporting the evolution.
 </div>
 <br />
 <div align="center">
